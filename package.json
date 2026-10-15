@@ -1,0 +1,11 @@
+{
+  "name": "the-will-of-d",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix the-will-of-d && npm install --prefix the-will-of-d-client && npm install",
+    "start": "concurrently -n api,ui -c yellow,cyan \"npm start --prefix the-will-of-d\" \"npm run dev --prefix the-will-of-d-client\"",
+    "test": "npm test --prefix the-will-of-d"
+  },
+  "devDependencies": { "concurrently": "^9.2.1" }
+}

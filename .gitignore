@@ -1,0 +1,44 @@
+# node_modules/
+# dist/
+# .env
+# *.log
+# # personal data: chats, characters, API keys, uploaded images
+# the-will-of-d/data/*.json
+# the-will-of-d/data/*.tmp
+# the-will-of-d/data/*.corrupt-*
+# the-will-of-d/uploads/*
+# !the-will-of-d/data/.gitkeep
+# !the-will-of-d/uploads/.gitkeep
+# # your old v2 data (personal)
+# import-from-v2/*.json
+# import-from-v2/uploads/*
+
+
+# Dependencies & build outputs (root & subfolders)
+node_modules/
+dist/
+build/
+*.log
+
+# Personal & imported data
+import-from-v2/**
+!import-from-v2/.gitkeep
+
+# Server data, keys, and uploads
+the-will-of-d/data/*.json
+the-will-of-d/data/*.tmp
+the-will-of-d/data/*.corrupt-*
+the-will-of-d/data/connections.json
+the-will-of-d/uploads/**
+!the-will-of-d/data/.gitkeep
+!the-will-of-d/uploads/.gitkeep
+
+# Catch any .env in root, backend, or the-will-of-d-client
+**/.env
+**/.env.*
+!**/.env.example
+
+# OS / Zip files
+*.zip
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+{
+  "name": "the-will-of-d",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Backend for The Will of D — AI character chat with pluggable providers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=22.13" },
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.2.0"
+  }
+}
